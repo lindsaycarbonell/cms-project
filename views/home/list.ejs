@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <a class="nav-item nav-link">Home</a>
+            <a class="nav-item nav-link">New Post</a>
+            <a class="nav-item nav-link">Something else</a>
+          </ul>
+        </div>
+      </nav>
+      <div id="main-container" class="container max-width">
+
+
+        <!--https://dribbble.com/shots/1226383-Velvet-Fox-Logo-Concept-->
+        <% if (posts.length) { %>
+        <!-- <ul> -->
+            <% for (var i in posts) { %>
+            <div class="post-box">
+              <img src="logo_fox.png" style="display:inline-block;"/>
+              <a href="/posts/<%= posts[i]._id %>"><h4 class="meta-title"><%= posts[i].title %></h4></a>
+              <h5 class="meta-author">by <%= posts[i].author %></h5>
+              <p class="meta-excerpt"><%= posts[i].content %></p>
+            </div>
+            <!-- <li><a href="/posts/<%= posts[i].title %>"><%= posts[i].title %></a></li> -->
+            <% } %>
+        <!-- </ul> -->
+        <% } else { %>
+        <p>Sorry, there are no posts yet.</p>
+        <% } %>
+      </div>
+    </body>
+</html>

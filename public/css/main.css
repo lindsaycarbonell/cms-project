@@ -1,0 +1,41 @@
+/*#EDC9A8 : peach
+#FFFEFE : barely off white
+#ECA87B : orange
+#9D836F : brown
+#AAAAAA : gray*/
+
+body{
+  background-color: #EDC9A8;
+}
+
+#main-container {
+  background-color:#FFFEFE;
+  height: 100vh;
+}
+
+h3{
+  text-align:center;
+}
+
+.max-width{
+  max-width:800px;
+}
+
+.post-box{
+  width:100%;
+  text-align:center;
+}
+
+.meta-title{
+  font-size:25pt;
+  font-style:bold;
+}
+
+.meta-author{
+  font-size:13pt;
+  font-style:italic;
+}
+
+.meta-excerpt{
+  font-size:11pt;
+}
